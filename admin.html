@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <!-- <link rel="stylesheet" href="./global.css" /> -->
+    <link rel="stylesheet" href="./admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-2">
+      <nav class="frame-parent" id="sideNav">
+        <div class="admin-wrapper">
+          <div class="admin">Admin</div>
+        </div>
+        <div class="petopia-parent" id="logo">
+          <div class="petopia">petopia</div>
+          <div class="frame-child"></div>
+          <div class="frame-item"></div>
+          <div class="frame-inner"></div>
+          <img class="vector-icon" alt="" src="./public/vector.svg" />
+
+          <img class="vector-icon1" alt="" src="./public/vector.svg" />
+
+          <img class="vector-icon2" alt="" src="./public/vector.svg" />
+        </div>
+      </nav>
+      <main class="frame-group" id="body">
+        <main class="frame-container" id="newProduct">
+          <form class="product-name-parent" id="description">
+            <div class="product-name">Product Name</div>
+            <div class="description">Description</div>
+            <input
+              class="frame-input"
+              name="productName"
+              placeholder="e.g. japanese spitz"
+              type="text"
+            />
+
+            <textarea
+              class="frame-textarea"
+              placeholder="e.g. Embrace Endless Love with Your New Furry Best Friend."
+              id="productDescription"
+            >
+            </textarea>
+          </form>
+          <div class="frame-div" id="productImages" src>
+            <div class="frame-wrapper">
+              <input class="frame-child1" required="{true}" type="file" src />
+            </div>
+            <div class="component-parent">
+              <button class="replace-wrapper" autofocus="{true}" id="replace">
+                <div class="replace">Replace</div>
+              </button>
+              <button class="replace-container" autofocus="{true}" id="replace">
+                <div class="replace">Remove</div>
+              </button>
+            </div>
+            <div class="frame-child2"></div>
+            <div class="frame-child3"></div>
+          </div>
+          <form class="product-category-parent">
+            <div class="product-name">Product Category</div>
+            <div class="description">Gender</div>
+            <select class="dog-parent" required="{true}" id="productCategory">
+              <option value="1">Dog</option>
+              <option value="2">Cat</option>
+              <option value="3">Rabbit</option>
+              <option value="4">Others</option>
+            </select>
+            <select class="male-parent" id="gender">
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+            </select>
+          </form>
+          <form class="items-weight-parent" id="shippingDelivery">
+            <h2 class="items-weight" id="itemWeight">Items weight</h2>
+            <h2 class="price" id="priceTxt">Price</h2>
+            <h2 class="compare-at-price" id="compPrice">Compare at price</h2>
+            <input
+              class="frame-child4"
+              id="itemsWeight"
+              placeholder="e.g. 20"
+              type="number"
+            />
+
+            <div class="kg-wrapper">
+              <div class="kg">kg</div>
+            </div>
+            <div class="frame-parent1">
+              <input
+                class="frame-child5"
+                id="price"
+                placeholder="e.g. 120.00"
+                type="number"
+              />
+
+              <div class="wrapper">
+                <div class="div">$</div>
+              </div>
+            </div>
+            <div class="frame-parent2">
+              <input
+                class="frame-child5"
+                id="comparePrice"
+                placeholder="e.g. 320.00"
+                type="number"
+              />
+
+              <div class="wrapper">
+                <div class="div">$</div>
+              </div>
+            </div>
+          </form>
+          <div class="description1">Description</div>
+          <div class="product-images">Product Images</div>
+          <div class="category">Category</div>
+          <div class="shipping-and-delivery">Shipping and Delivery</div>
+        </main>
+        <button class="add-product-wrapper" autofocus="{true}" id="adoptMe">
+          <div class="add-product">Add Product</div>
+        </button>
+        <button class="discard-wrapper" id="adoptMe">
+          <div class="discard">Discard</div>
+        </button>
+        <section class="add-new-product-parent">
+          <h1 class="add-new-product">Add New Product</h1>
+          <button class="epback">
+            <img class="vector-icon3" alt="" src="./public/vector1.svg" />
+
+            <img class="vector-icon4" alt="" src="./public/vector2.svg" />
+          </button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

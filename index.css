@@ -1055,7 +1055,9 @@
   overflow: hidden;
   flex-shrink: 0;
   z-index: 1;
+
 }
+
 .rectangle-parent {
   overflow: hidden;
   display: flex;

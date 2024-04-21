@@ -152,50 +152,20 @@
         </div>
         <div class="product-name-group" id="productId">
           <h1 class="product-name1">Product Name</h1>
-          <iframe class="frame-iframe" id="petType" name> </iframe>
-          <div class="pet-type-">Pet type - japanese spitz</div>
+
+          <!-- Display product name in the iframe -->
+          <iframe class="frame-iframe" id="petType" name="petType">
+            <?php
+            // Get the product name from the URL query parameter
+            $productName = isset($_GET['name']) ? htmlspecialchars($_GET['name']) : '';
+
+            // Display the product name
+            echo $productName;
+            ?>
+          </iframe>
+
+          <div class="pet-type-">Pet type - <?php echo htmlspecialchars($_GET['name']); ?></div>
         </div>
       </main>
-      <footer class="adopt-parent">
-        <b class="adopt1">Adopt</b>
-        <div class="petopia-pvt-ltd">Petopia pvt. ltd</div>
-        <b class="shop">Shop</b>
-        <b class="order-support">Order & Support</b>
-        <b class="account">Account</b>
-        <b class="info">Info</b>
-        <b class="follow-along">Follow Along</b>
-        <div class="dog">Dog</div>
-        <div class="kathmandu-np">Kathmandu, NP</div>
-        <div class="pupsicle">Pupsicle</div>
-        <div class="support">Support</div>
-        <div class="log-in">Log In</div>
-        <div class="about">About</div>
-        <div class="all">All</div>
-        <div class="all1">All</div>
-        <div class="faq">FAQ</div>
-        <div class="shipping-returns">Shipping & Returns</div>
-        <div class="create-an-account">Create an Account</div>
-        <div class="store-locator">Store Locator</div>
-        <div class="news">News</div>
-        <img class="vector-icon6" alt="" src="./public/vector4.svg" />
-
-        <img class="vector-icon7" alt="" src="./public/vector5.svg" />
-
-        <img class="vector-icon8" alt="" src="./public/vector6.svg" />
-
-        <div class="ellipse-group">
-          <div class="frame-child15"></div>
-          <div class="frame-child16"></div>
-          <div class="frame-child17"></div>
-          <img class="vector-icon9" alt="" src="./public/vector7.svg" />
-
-          <img class="vector-icon10" alt="" src="./public/vector7.svg" />
-
-          <img class="vector-icon11" alt="" src="./public/vector7.svg" />
-
-          <div class="petopia1">petopia</div>
-        </div>
-      </footer>
-    </div>
-  </body>
-</html>
+      <
+ 

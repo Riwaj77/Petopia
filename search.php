@@ -166,9 +166,9 @@
                     echo "<p>No. " . $row['id'] . "</p>";
                     echo "<p>Description: " . $row['breed'] . "</p>";
                     echo "<p>Price: $" . $row['price'] . "</p>";
-                    echo "<a href='form.php?id=" . $row['id'] . "'>";
+                    echo "<a href='order.php?id=" . $row['id'] . "&name=" . urlencode($row['name']) . "'>";
                     echo "<button>Inquire Now</button>";
-                    echo "</a>";
+                    echo "</a>";                    
                     echo "</div>";
                 }
             } else {

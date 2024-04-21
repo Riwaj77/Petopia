@@ -110,16 +110,14 @@
 
         <div class="product-list">
             <?php
-            // Database connection parameters
+
             $servername = "localhost";
             $username = "root";
             $password = "";
             $dbname = "pet";
 
-            // Create a connection to the database
             $conn = new mysqli($servername, $username, $password, $dbname);
 
-            // Check the connection
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
             }
@@ -165,7 +163,7 @@
                     echo "<h2>" . $row['name'] . "</h2>";
                     echo "<p>No. " . $row['id'] . "</p>";
                     echo "<p>Description: " . $row['breed'] . "</p>";
-                    echo "<p>Price: $" . $row['price'] . "</p>";
+                    echo "<p>Price: " . $row['price'] . "</p>";
                     echo "<a href='order.php?id=" . $row['id'] . "&name=" . urlencode($row['name']) . "'>";
                     echo "<button>Inquire Now</button>";
                     echo "</a>";                    

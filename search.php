@@ -93,7 +93,7 @@
 
 <body>
     <header>
-        <h1>Pet Shop</h1>
+        <h1>Petopia</h1>
     </header>
     <div class="container">
         <form class="search-form" method="GET" action="">
@@ -165,7 +165,7 @@
                     echo "<p>Description: " . $row['breed'] . "</p>";
                     echo "<p>Price: " . $row['price'] . "</p>";
                     echo "<a href='order.php?id=" . $row['id'] . "&name=" . urlencode($row['name']) . "'>";
-                    echo "<button>Inquire Now</button>";
+                    echo "<button>Adopt Now</button>";
                     echo "</a>";                    
                     echo "</div>";
                 }
